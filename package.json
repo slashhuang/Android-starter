@@ -1,0 +1,19 @@
+{
+  "name": "android-starter",
+  "version": "1.0.0",
+  "description": "a simple android react-native demo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start"
+  },
+  "keywords": [
+    "androi",
+    "react-native"
+  ],
+  "author": "slashhuang",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.4.1",
+    "react-native": "^0.38.0"
+  }
+}
