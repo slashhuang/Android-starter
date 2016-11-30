@@ -14,7 +14,7 @@ class MyAwesomeApp extends React.Component {
       <View >
         <Text style={styles.hello}>Hello, World</Text>
         <Text style={styles.hello}>恭喜你已经完成React Native移植Android项目</Text>
-        <Text style={styles.hello}>博客地址:www.lcode.org</Text>
+        <Text style={styles.hello}>博客地址:github.com/slashhuang</Text>
       </View>
     )
   }
