@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    protected void openRN(View view) {
+    public void openRN(View view) {
         Intent intent = new Intent(this, RnDemoActivity.class);
         startActivity(intent);
     }
