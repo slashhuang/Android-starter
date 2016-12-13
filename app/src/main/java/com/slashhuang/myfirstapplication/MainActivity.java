@@ -16,4 +16,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, RnDemoActivity.class);
         startActivity(intent);
     }
+    public void openRNTest(View view) {
+        Intent intent = new Intent(this, RnTest.class);
+        startActivity(intent);
+    }
 }
