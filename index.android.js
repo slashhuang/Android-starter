@@ -20,6 +20,7 @@ class MyAwesomeApp extends React.Component {
   }
 }
 class MyAwesomeApp1 extends React.Component {
+  debugger;
   render() {
     return (
       <View >

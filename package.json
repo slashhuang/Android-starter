@@ -4,7 +4,8 @@
   "description": "a simple android react-native demo",
   "main": "index.js",
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start"
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "build":"mkdir -p app/src/main/assets/  && react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output app/src/main/assets/index.android.bundle --assets-dest app/src/main/res/"
   },
   "keywords": [
     "androi",
