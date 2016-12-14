@@ -1,12 +1,57 @@
 'use strict';
 
-import React from 'react';
-import {
+// import React from 'react';
+// import {
+//   AppRegistry,
+//   StyleSheet,
+//   Text,
+//   View
+// } from 'react-native';
+
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ */
+import React,{Component} from 'react';
+import  {
   AppRegistry,
+  // Component,
   StyleSheet,
   Text,
-  View
+  View,
+  Navigator
 } from 'react-native';
+
+import IndexPage from './components/index.js';
+/**
+ * API测试代码
+ */
+//import ApiTest from './components/test.js';
+/*=======  end  =======*/
+class mockTMall extends React.Component {
+  render() {
+    return (
+      <Navigator
+          tintColor='#cccccc'
+          barTintColor='#cccccc'
+          initialRoute={{ name: 'indexPage', component: IndexPage }}
+          /**
+           * 切换界面方式,只能向前切换，不能向后切换
+           */
+
+          configureScene={(route) => {
+            let  gestureType = Navigator.SceneConfigs.HorizontalSwipeJump;
+            gestureType.gestures.jumpForward=null;
+             return gestureType
+          }}
+          renderScene={(route, navigator) => {
+            let Component = route.component;
+            return <Component {...route.params} {...route} navigator={navigator} />
+          }}>
+      </Navigator>
+    );
+  }
+}
 
 class MyAwesomeApp extends React.Component {
   render() {
@@ -20,7 +65,6 @@ class MyAwesomeApp extends React.Component {
   }
 }
 class MyAwesomeApp1 extends React.Component {
-  debugger;
   render() {
     return (
       <View >
@@ -38,5 +82,5 @@ var styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('TestRn', () => MyAwesomeApp);
+AppRegistry.registerComponent('TestRn', () => mockTMall);
 AppRegistry.registerComponent('TestRn1', () => MyAwesomeApp1);

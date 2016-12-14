@@ -13,7 +13,7 @@ import com.slashhuang.myfirstapplication.R;
 
 //activity在onStart()被调用后开始被用户可见，但是 onResume()会迅速被执行使得activity停留在Resumed状态
 //在系统调用 onCreate()) 之后，它会快速调用 onStart())，紧接着快速调用 onResume()
-public class lifeCycle extends AppCompatActivity {
+public class LifeCycle extends AppCompatActivity {
     TextView mTextView;// Member variable for text view in the layout
 //    默认情况下, 系统使用 Bundle 实例来保存每一个View(视图)对象中的信息(例如输入EditText 中的文本内容)。因此，如果Activity被destroyed与recreated, 则layout的状态信息会自动恢复到之前的状态
 //    : 为了使Android系统能够恢复Activity中的View的状态，每个View都必须有一个唯一ID，由android:id定义
