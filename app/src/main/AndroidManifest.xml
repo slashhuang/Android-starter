@@ -28,6 +28,10 @@
         <activity
             android:name=".RnTest"
             android:label="@string/title_activity_rn_test"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.lifeCycle"
+            android:label="@string/title_activity_life_cycle"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
